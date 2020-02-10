@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "224772958988",
+    "firebase_url": "https://patient-doctor-consultation.firebaseio.com",
+    "project_id": "patient-doctor-consultation",
+    "storage_bucket": "patient-doctor-consultation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224772958988:android:a5e24742cb32701a",
+        "android_client_info": {
+          "package_name": "com.group4.patientdoctorconsultation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224772958988-59qp2u1rohsurn9fu4qhu46ia4ri2gq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.group4.patientdoctorconsultation",
+            "certificate_hash": "b0db4ac5f28da2e6371046fcd4894513f9dc72fd"
+          }
+        },
+        {
+          "client_id": "224772958988-phd7vj8lqea9sv9pmmt50omvj5ms6rqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQWVQKHszBGOjMUzss6_H2_nYIWH8dyrk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224772958988-phd7vj8lqea9sv9pmmt50omvj5ms6rqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

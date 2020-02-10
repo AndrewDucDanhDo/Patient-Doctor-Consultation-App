@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/fragment_home"
+        android:enabled="true"
+        android:title="@string/menu_title_home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/fragment_profile"
+        android:enabled="true"
+        android:title="@string/menu_title_profile"
+        android:icon="@drawable/ic_account_box_black_24dp"/>
+
+</menu>

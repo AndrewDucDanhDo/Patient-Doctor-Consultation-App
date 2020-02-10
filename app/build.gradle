@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion rootProject.compileSdkVersion
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+        applicationId "com.group4.patientdoctorconsultation"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //Only because we have a million dependencies and I am not using proguard for each debug build
+        //(If we were to run a production build this should be removed)
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        signingConfigs {
+            debug {
+                storeFile file("external/debug.keystore")
+            }
+        }
+        debug {
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //Android Arch Components
+    implementation "android.arch.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
+    implementation "android.arch.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
+    implementation "android.arch.lifecycle:extensions:$rootProject.lifecycleVersion"
+    implementation "android.arch.work:work-runtime-ktx:$rootProject.workVersion"
+
+    //Android Support Libraries
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:customtabs:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+
+    //Firebase
+    implementation "com.google.firebase:firebase-core:$rootProject.firebaseVersion"
+    implementation "com.firebaseui:firebase-ui-auth:$rootProject.firebaseUIVersion"
+    implementation "com.google.firebase:firebase-firestore:$rootProject.firestoreVersion"
+    implementation "com.google.firebase:firebase-storage:$rootProject.firebaseStorageVersion"
+
+    //FAB
+    implementation "com.getbase:floatingactionbutton:$rootProject.FABVersion"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
+
+    //Maps
+    implementation "com.google.android.gms:play-services-places:$rootProject.mapVersion"
+    implementation "com.google.android.gms:play-services-location:$rootProject.mapVersion"
+}
+
+apply plugin: 'com.google.gms.google-services'

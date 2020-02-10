@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Patient Doctor Consultation</string>
+
+    <string name="menu_title_home">Home</string>
+    <string name="menu_title_profile">Profile</string>
+    <string name="menu_title_preferences">Preferences</string>
+
+    <!--Profile Fragment-->
+    <string name="label_profile_first_name">First Name</string>
+    <string name="label_profile_last_name">Last Name</string>
+    <string name="label_profile_gender">Gender</string>
+    <string name="label_profile_height">Height</string>
+    <string name="label_profile_weight">Weight</string>
+    <string name="label_profile_age">Age</string>
+    <string name="profile_hint_gender">Male</string>
+    <string name="profile_hint_age">25</string>
+    <string name="profile_hint_weight">85</string>
+    <string name="profile_hint_last_name">Smith</string>
+    <string name="profile_hint_first_name">John</string>
+    <string name="profile_hint_height">185</string>
+    <string name="submit">Submit</string>
+    <string name="home_card_title_data_packet">Data Packets</string>
+    <string name="home_card_title_doctors">Doctors</string>
+    <string name="home_card_title_nearby">Nearby Medical Facilities</string>
+    <string name="add">+</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_enter_text">Enter text</string>
+</resources>
